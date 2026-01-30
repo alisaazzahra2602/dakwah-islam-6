@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SI Dakwah Islam</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HERO + HEADER -->
+    <section class="hero" id="beranda">
+      <header class="hero-header">
+        <h1>SI Dakwah Islam</h1>
+
+        <div class="global-search hero-search">
+          <input
+            type="text"
+            id="globalSearch"
+            placeholder="Cari jadwal, materi, atau da'i..."
+          />
+        </div>
+
+        <nav>
+          <a href="#beranda">Beranda</a>
+          <a href="#jadwal">Jadwal</a>
+          <a href="#materi">Materi</a>
+          <a href="#dai">Da'i</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+      </header>
+
+      <div class="hero-overlay">
+        <h2>Selamat Datang di SI Dakwah Islam</h2>
+        <p>
+          Media informasi jadwal pengajian, materi dakwah, dan profil da'i untuk
+          memperkuat ukhuwah Islamiyah.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section id="jadwal">
+        <h2>Jadwal Pengajian</h2>
+        <div class="cards-container" id="list-jadwal"></div>
+      </section>
+
+      <section id="materi">
+        <h2>Materi Dakwah</h2>
+        <div class="cards-container" id="list-materi"></div>
+      </section>
+
+      <section id="dai">
+        <h2>Profil Da'i</h2>
+        <div class="cards-container" id="list-dai"></div>
+      </section>
+
+      <section id="kontak">
+        <h2>Kontak</h2>
+        <p>Email: alisaazzahra808@sidakwah.com</p>
+        <p>Telp: 0895340666989</p>
+        <p>Alamat: Jl. Dakwah No.1, Jakarta</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 SI Dakwah Islam</p>
+    </footer>
+
+    <div id="modalMateri" class="modal">
+      <!-- Modal Profil Da'i -->
+      <div class="modal" id="modalDai">
+        <div class="modal-content">
+          <span class="close" id="closeDai">&times;</span>
+          <div id="modalBodyDai"></div>
+        </div>
+      </div>
+
+      <div class="modal-content">
+        <span class="close" id="closeBtn">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
